@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Include Handlebars from a CDN -->
+    <script src="../node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="templates.js"></script>
+    <script>
+      // compile the template
+      var template = Handlebars.compile(
+        "<p>Handlebars <b>{{doesWhat}}</b></p>"
+      );
+      // execute the compiled template and print the output to the console
+      console.log(template({ doesWhat: "rocks!" }));
+    </script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <h1>Vjezbamo Handlebars template engine</h1>
+    <button onclick="dodaj()">Dodaj grafički segment na sučelje</button>
+    <button onclick="dodaj2()">Dodaj vijest</button>
+    <button onclick="dodaj3()">Dodaj komentar</button>
+    <div id="rezultati"></div>
+  </body>
+</html>

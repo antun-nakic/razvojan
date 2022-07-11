@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "scripts": {
+    "copyCode": "copy index.* \"build\"",
+    "compileHandebars": "handlebars templates -f build/templates.js",
+    "transpile": "babel src -d lib",
+    "build": "npm run copyCode && npm run compileHandebars"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}

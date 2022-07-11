@@ -1,0 +1,1 @@
+const{src,dest}=require("gulp"),uglify=require("gulp-uglify");function streamTask(){return src("*.js").pipe(uglify()).pipe(dest("output"))}exports.default=streamTask;

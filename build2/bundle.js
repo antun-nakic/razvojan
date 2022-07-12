@@ -1,3 +1,5 @@
+import ppp from "./index2";
+
 function dodaj() {
   let broj = Math.random();
   document.getElementById("rezultati").innerHTML += template({
